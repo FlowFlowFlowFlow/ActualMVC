@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(315deg, rgba(2, 0, 36, 1) 0%, rgba(0, 66, 66, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 8vh;
+}
+
+input {
+    width: 40vw;
+    padding: 2vh;
+    font-size: 4vh;
+    border: 1vh solid #000000;
+    border-radius: 2vh;
+}
+
+label {
+    font-size: 4vh;
+}
+
+body > p {
+    color: white;
+    margin: 5vh;
+    font-size: 3vh;
+}
+
+.signup-or-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    margin-top: 17vh;
+}
+
+.status-code-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.navbar-item a, .navbar-item p {
+    display: block;
+    padding: 3vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 4vh;
+}
+
+.navbar-item a, .navbar-item p:not(.current) {
+    background-color: #000000;
+}
+
+.current {
+    background-color: transparent;
+}
+
+.navbar-in-between-pages-and-signup-login {
+    flex: 1;
+}
+
+.navbar-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 4vh;
+    padding: 3vh;
+    border: none;
+}
+
+.signup-or-login-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 4vh;
+    border: none;
+    border-radius: 4vh;
+    padding: 1vh;
+    width: 25vw;
+}
+
+.navbar-item a:hover:not(.current), .navbar-item button:hover:not(.current), form button:hover {
+    background-color: #008000;
+}
+
+.empty-space-overlaid-by-navbar {
+    padding: 3vh;
+    font-size: 4vh;
+}
+
+.form-error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 3vh;
+}
