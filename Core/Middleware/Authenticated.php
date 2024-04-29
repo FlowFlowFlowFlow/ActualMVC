@@ -10,9 +10,7 @@ class Authenticated
 
         if (!$_SESSION["user"] ?? false) {
 
-            header("Location: /");
-
-            exit();
+            redirect("/");
 
         }
 
